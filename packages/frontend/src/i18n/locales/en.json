@@ -1,0 +1,139 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "view": "View",
+    "download": "Download",
+    "upload": "Upload",
+    "search": "Search",
+    "filter": "Filter",
+    "clear": "Clear",
+    "submit": "Submit",
+    "close": "Close",
+    "yes": "Yes",
+    "no": "No",
+    "ok": "OK"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "uploadDocuments": "Upload Documents",
+    "analysisResults": "Analysis Results",
+    "reports": "Reports",
+    "geospatialView": "Geospatial View",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "header": {
+    "title": "AI-Powered DPR Quality Assessment System",
+    "appName": "DPR System"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "welcome": "Welcome to DPR Quality Assessment System",
+    "totalDocuments": "Total Documents",
+    "completedAnalysis": "Completed Analysis",
+    "averageScore": "Average Score",
+    "pendingReviews": "Pending Reviews",
+    "recentActivity": "Recent Activity",
+    "quickActions": "Quick Actions",
+    "uploadNew": "Upload New Document",
+    "viewReports": "View Reports",
+    "systemStatus": "System Status"
+  },
+  "upload": {
+    "title": "Upload Documents",
+    "dragDrop": "Drag and drop files here, or click to select",
+    "supportedFormats": "Supported formats: PDF, DOCX, TXT",
+    "maxSize": "Maximum file size",
+    "batchUpload": "Batch Upload (up to 10 files)",
+    "uploadProgress": "Upload Progress",
+    "processingStatus": "Processing Status",
+    "uploaded": "Uploaded",
+    "processing": "Processing",
+    "completed": "Completed",
+    "failed": "Failed"
+  },
+  "analysis": {
+    "title": "Analysis Results",
+    "completenessScore": "Completeness Score",
+    "feasibilityRating": "Feasibility Rating",
+    "riskLevel": "Risk Level",
+    "priceComparison": "Price Comparison",
+    "schemeMatches": "Scheme Matches",
+    "gapAnalysis": "Gap Analysis",
+    "recommendations": "Recommendations",
+    "viewDetails": "View Details",
+    "exportReport": "Export Report"
+  },
+  "reports": {
+    "title": "Reports",
+    "generateReport": "Generate Report",
+    "reportType": "Report Type",
+    "dateRange": "Date Range",
+    "comprehensive": "Comprehensive Analysis",
+    "summary": "Summary Report",
+    "comparison": "Comparison Report",
+    "exportPDF": "Export as PDF",
+    "exportExcel": "Export as Excel"
+  },
+  "geospatial": {
+    "title": "Geospatial View",
+    "mapView": "Map View",
+    "projectLocations": "Project Locations",
+    "verificationStatus": "Verification Status",
+    "accessibility": "Accessibility",
+    "constraints": "Constraints",
+    "verified": "Verified",
+    "pending": "Pending",
+    "failed": "Failed"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "english": "English",
+    "hindi": "हिंदी (Hindi)",
+    "assamese": "অসমীয়া (Assamese)",
+    "preferences": "Preferences",
+    "notifications": "Notifications",
+    "account": "Account Settings",
+    "system": "System Settings"
+  },
+  "auth": {
+    "login": "Login",
+    "username": "Username",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "loginError": "Invalid username or password",
+    "loginSuccess": "Login successful"
+  },
+  "errors": {
+    "fileTooBig": "File size exceeds maximum limit",
+    "invalidFormat": "Invalid file format",
+    "uploadFailed": "Upload failed",
+    "processingFailed": "Processing failed",
+    "networkError": "Network error occurred",
+    "serverError": "Server error occurred",
+    "unauthorized": "Unauthorized access",
+    "notFound": "Resource not found"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "minLength": "Minimum length is {{count}} characters",
+    "maxLength": "Maximum length is {{count}} characters"
+  },
+  "dateTime": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "lastWeek": "Last Week",
+    "lastMonth": "Last Month",
+    "custom": "Custom Range"
+  }
+}

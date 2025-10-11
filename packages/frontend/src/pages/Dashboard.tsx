@@ -6,6 +6,7 @@ import {
   Alert,
   Snackbar,
 } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import {
   Dashboard as DashboardIcon,
   Assessment as AssessmentIcon,
@@ -23,6 +24,7 @@ import { dashboardApi } from '../services/api';
 import { useNavigate } from 'react-router-dom';
 
 const Dashboard: React.FC = () => {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [summary, setSummary] = useState<DashboardSummary | null>(null);
   const [recentAnalyses, setRecentAnalyses] = useState<AnalysisResults[]>([]);
@@ -155,19 +157,19 @@ const Dashboard: React.FC = () => {
   return (
     <Box>
       <Typography variant="h4" component="h1" gutterBottom sx={{ fontWeight: 'bold' }}>
-        Dashboard
+        {t('dashboard.title')}
       </Typography>
       <Typography variant="body1" color="text.secondary" gutterBottom sx={{ mb: 3 }}>
-        AI-Powered DPR Quality Assessment and Risk Prediction System
+        {t('dashboard.welcome')}
       </Typography>
 
       {/* Summary Cards */}
       <Grid container spacing={3} sx={{ mb: 4 }}>
         <Grid item xs={12} sm={6} md={4}>
           <SummaryCard
-            title="Total Documents"
+            title={t('dashboard.totalDocuments')}
             value={summary?.totalDocuments || 0}
-            subtitle="Documents uploaded"
+            subtitle={t('upload.uploaded')}
             icon={<UploadIcon />}
             color="primary"
             loading={loading}
@@ -175,9 +177,9 @@ const Dashboard: React.FC = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SummaryCard
-            title="Completed Analyses"
+            title={t('dashboard.completedAnalysis')}
             value={summary?.completedAnalyses || 0}
-            subtitle="Analysis completed"
+            subtitle={t('upload.completed')}
             icon={<CheckCircleIcon />}
             color="success"
             loading={loading}
@@ -185,19 +187,19 @@ const Dashboard: React.FC = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SummaryCard
-            title="Processing"
+            title={t('upload.processing')}
             value={summary?.processingDocuments || 0}
-            subtitle={summary?.processingDocuments > 0 ? "Analysis in progress..." : "Ready for new uploads"}
+            subtitle={(summary?.processingDocuments ?? 0) > 0 ? t('upload.processing') + "..." : t('upload.uploadProgress')}
             icon={<AssessmentIcon />}
-            color={summary?.processingDocuments > 0 ? "warning" : "info"}
+            color={(summary?.processingDocuments ?? 0) > 0 ? "warning" : "info"}
             loading={loading}
           />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SummaryCard
-            title="Avg Completeness"
+            title={t('dashboard.averageScore')}
             value={summary ? `${Math.round(summary.averageCompletenessScore)}%` : '0%'}
-            subtitle="Average completeness score"
+            subtitle={t('analysis.completenessScore')}
             icon={<DashboardIcon />}
             color="primary"
             loading={loading}
@@ -205,9 +207,9 @@ const Dashboard: React.FC = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SummaryCard
-            title="Avg Feasibility"
+            title={t('analysis.feasibilityRating')}
             value={summary ? `${Math.round(summary.averageFeasibilityScore)}%` : '0%'}
-            subtitle="Average feasibility rating"
+            subtitle={t('analysis.feasibilityRating')}
             icon={<TrendingUpIcon />}
             color="success"
             loading={loading}
@@ -215,9 +217,9 @@ const Dashboard: React.FC = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <SummaryCard
-            title="High Risk Projects"
+            title={t('dashboard.pendingReviews')}
             value={summary?.highRiskProjects || 0}
-            subtitle="Projects requiring attention"
+            subtitle={t('analysis.riskLevel')}
             icon={<WarningIcon />}
             color="warning"
             loading={loading}

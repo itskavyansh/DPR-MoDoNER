@@ -31,45 +31,47 @@ import {
   Logout,
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../contexts/AuthContext';
 import { NavigationItem } from '../../types/dashboard';
+import LanguageSelector from '../LanguageSelector';
 
 const drawerWidth = 240;
 
-const navigationItems: NavigationItem[] = [
+const getNavigationItems = (t: any): NavigationItem[] => [
   {
     id: 'dashboard',
-    label: 'Dashboard',
+    label: t('navigation.dashboard'),
     path: '/',
     icon: 'dashboard',
   },
   {
     id: 'upload',
-    label: 'Upload Documents',
+    label: t('navigation.uploadDocuments'),
     path: '/upload',
     icon: 'upload',
   },
   {
     id: 'analysis',
-    label: 'Analysis Results',
+    label: t('navigation.analysisResults'),
     path: '/analysis',
     icon: 'analytics',
   },
   {
     id: 'reports',
-    label: 'Reports',
+    label: t('navigation.reports'),
     path: '/reports',
     icon: 'assessment',
   },
   {
     id: 'geospatial',
-    label: 'Geospatial View',
+    label: t('navigation.geospatialView'),
     path: '/geospatial',
     icon: 'map',
   },
   {
     id: 'settings',
-    label: 'Settings',
+    label: t('navigation.settings'),
     path: '/settings',
     icon: 'settings',
   },
@@ -92,6 +94,7 @@ interface DashboardLayoutProps {
 }
 
 const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
+  const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const navigate = useNavigate();
@@ -100,6 +103,8 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+  
+  const navigationItems = getNavigationItems(t);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -130,7 +135,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
     <div>
       <Toolbar>
         <Typography variant="h6" noWrap component="div" sx={{ fontWeight: 'bold' }}>
-          DPR System
+          {t('header.appName')}
         </Typography>
       </Toolbar>
       <Divider />
@@ -193,9 +198,10 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            AI-Powered DPR Quality Assessment System
+            {t('header.title')}
           </Typography>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+            <LanguageSelector />
             <Typography variant="body2" sx={{ display: { xs: 'none', sm: 'block' } }}>
               {user?.username}
             </Typography>
@@ -232,13 +238,13 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
           <ListItemIcon>
             <AccountCircle fontSize="small" />
           </ListItemIcon>
-          Profile
+          {t('navigation.profile')}
         </MenuItem>
         <MenuItem onClick={handleLogout}>
           <ListItemIcon>
             <Logout fontSize="small" />
           </ListItemIcon>
-          Logout
+          {t('navigation.logout')}
         </MenuItem>
       </Menu>
       <Box

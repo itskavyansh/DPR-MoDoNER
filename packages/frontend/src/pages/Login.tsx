@@ -12,10 +12,13 @@ import {
   CssBaseline,
 } from '@mui/material';
 import { LockOutlined as LockIcon } from '@mui/icons-material';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '../components/LanguageSelector';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 const Login: React.FC = () => {
+  const { t } = useTranslation();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -36,7 +39,7 @@ const Login: React.FC = () => {
       await login(username, password);
       navigate(from, { replace: true });
     } catch (err) {
-      setError('Invalid username or password');
+      setError(t('auth.loginError'));
     } finally {
       setLoading(false);
     }
@@ -53,14 +56,18 @@ const Login: React.FC = () => {
           alignItems: 'center',
         }}
       >
+        <Box sx={{ position: 'absolute', top: 16, right: 16 }}>
+          <LanguageSelector />
+        </Box>
+        
         <Avatar sx={{ m: 1, bgcolor: 'primary.main' }}>
           <LockIcon />
         </Avatar>
         <Typography component="h1" variant="h5" gutterBottom>
-          DPR Assessment System
+          {t('header.appName')}
         </Typography>
         <Typography variant="body2" color="text.secondary" align="center" sx={{ mb: 3 }}>
-          AI-Powered DPR Quality Assessment and Risk Prediction
+          {t('header.title')}
         </Typography>
         
         <Card sx={{ width: '100%' }}>
@@ -77,7 +84,7 @@ const Login: React.FC = () => {
                 required
                 fullWidth
                 id="username"
-                label="Username"
+                label={t('auth.username')}
                 name="username"
                 autoComplete="username"
                 autoFocus
@@ -91,7 +98,7 @@ const Login: React.FC = () => {
                 required
                 fullWidth
                 name="password"
-                label="Password"
+                label={t('auth.password')}
                 type="password"
                 id="password"
                 autoComplete="current-password"
@@ -107,7 +114,7 @@ const Login: React.FC = () => {
                 sx={{ mt: 3, mb: 2 }}
                 disabled={loading || !username || !password}
               >
-                {loading ? 'Signing In...' : 'Sign In'}
+                {loading ? t('common.loading') : t('auth.login')}
               </Button>
               
               <Box sx={{ mt: 2, p: 2, bgcolor: 'grey.50', borderRadius: 1 }}>
