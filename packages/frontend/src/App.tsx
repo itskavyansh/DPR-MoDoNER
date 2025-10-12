@@ -14,6 +14,7 @@ import AnalysisDetail from './pages/AnalysisDetail';
 import Reports from './pages/Reports';
 import ReportDetail from './pages/ReportDetail';
 import Geospatial from './pages/Geospatial';
+import GeoCheck from './pages/GeoCheck';
 import Settings from './pages/Settings';
 
 const theme = createTheme({
@@ -81,6 +82,7 @@ function App() {
                       <Route path="/reports" element={<Reports />} />
                       <Route path="/reports/:id" element={<ReportDetail />} />
                       <Route path="/geospatial" element={<Geospatial />} />
+                      <Route path="/geocheck" element={<GeoCheck />} />
                       <Route path="/settings" element={<Settings />} />
                       <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>

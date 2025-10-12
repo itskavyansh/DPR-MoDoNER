@@ -33,6 +33,12 @@ const ProcessingStatus: React.FC<ProcessingStatusProps> = ({ onNewResults }) => 
       try {
         const API_BASE_URL = (import.meta as any).env?.VITE_API_BASE_URL || 'http://localhost:3001';
         const response = await fetch(`${API_BASE_URL}/api/processing/status`);
+        
+        // Check if response is ok before parsing JSON
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
         const data = await response.json();
         
         // Check if there are new completed analyses
@@ -43,6 +49,16 @@ const ProcessingStatus: React.FC<ProcessingStatusProps> = ({ onNewResults }) => 
         setStatus(data);
       } catch (error) {
         console.error('Failed to fetch processing status:', error);
+        // Provide fallback data to prevent UI errors
+        if (!status) {
+          setStatus({
+            total: 0,
+            processing: 0,
+            completed: 0,
+            failed: 0,
+            recent: []
+          });
+        }
       } finally {
         setLoading(false);
       }

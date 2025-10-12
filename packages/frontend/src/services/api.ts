@@ -68,10 +68,25 @@ api.interceptors.request.use((config) => {
 api.interceptors.response.use(
   (response) => response,
   (error) => {
+    console.warn('API Error:', error.message);
+    
     if (error.response?.status === 401) {
       localStorage.removeItem('authToken');
       window.location.href = '/login';
     }
+    
+    // Return empty data instead of rejecting for specific endpoints
+    if (error.config && (
+      error.config.url.includes('/api/processing/status') ||
+      error.config.url.includes('/api/dashboard/summary') ||
+      error.config.url.includes('/api/analysis')
+    )) {
+      console.info('Returning fallback data for:', error.config.url);
+      return Promise.resolve({ 
+        data: error.config.url.includes('/api/analysis') ? [] : {} 
+      });
+    }
+    
     return Promise.reject(error);
   }
 );
@@ -79,8 +94,13 @@ api.interceptors.response.use(
 export const dashboardApi = {
   // Dashboard summary
   getSummary: async (): Promise<DashboardSummary> => {
-    const response = await api.get('/api/dashboard/summary');
-    return response.data;
+    try {
+      const response = await api.get('/api/dashboard/summary');
+      return response.data;
+    } catch (error) {
+      console.warn('Failed to fetch dashboard summary:', error);
+      return {} as DashboardSummary;
+    }
   },
 
   // Document management
@@ -139,8 +159,13 @@ export const dashboardApi = {
   },
 
   getAllAnalysisResults: async (): Promise<AnalysisResults[]> => {
-    const response = await api.get('/api/analysis');
-    return response.data;
+    try {
+      const response = await api.get('/api/analysis');
+      return response.data;
+    } catch (error) {
+      console.warn('Failed to fetch analysis results:', error);
+      return [];
+    }
   },
 
   // Price comparison

@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kamakhya Temple",
+        "description": "Ancient Hindu temple in Guwahati",
+        "type": "Religious Site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.7, 26.16]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tawang Monastery",
+        "description": "Largest monastery in India",
+        "type": "Religious Site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.86, 27.58]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Majuli Island",
+        "description": "Largest river island in the world",
+        "type": "Natural Landmark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [94.16, 26.95]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Umiam Lake",
+        "description": "Man-made reservoir in Meghalaya",
+        "type": "Water Body"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [91.9, 25.67]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dzükou Valley",
+        "description": "Valley known for seasonal flowers",
+        "type": "Natural Landmark"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [94.02, 25.57]
+      }
+    }
+  ]
+}

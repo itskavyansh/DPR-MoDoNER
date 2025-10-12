@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Taj Mahal",
+        "description": "Historical monument and UNESCO World Heritage Site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [78.0422, 27.1751]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qutub Minar",
+        "description": "Historical monument in Delhi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1855, 28.5245]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gateway of India",
+        "description": "Monument in Mumbai"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.83, 18.92],
+            [72.835, 18.92],
+            [72.835, 18.925],
+            [72.83, 18.925],
+            [72.83, 18.92]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brahmaputra River",
+        "description": "Major river flowing through Assam",
+        "length": 2900
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[89.7, 26.2], [90.5, 26.3], [91.2, 26.2], [92.1, 26.3], [93.0, 26.4], [94.0, 26.5], [95.0, 27.1]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barak River",
+        "description": "Second largest river in Northeast India",
+        "length": 900
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[93.5, 24.8], [93.0, 24.7], [92.5, 24.6], [92.0, 24.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kameng River",
+        "description": "River in Arunachal Pradesh",
+        "length": 264
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[92.4, 27.3], [92.3, 27.0], [92.2, 26.8], [92.1, 26.5]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Subansiri River",
+        "description": "Largest tributary of Brahmaputra",
+        "length": 442
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[94.2, 27.5], [94.0, 27.3], [93.8, 27.1], [93.6, 26.9]]
+      }
+    }
+  ]
+}

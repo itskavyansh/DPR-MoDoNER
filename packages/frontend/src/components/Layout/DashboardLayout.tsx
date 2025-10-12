@@ -70,6 +70,12 @@ const getNavigationItems = (t: any): NavigationItem[] => [
     icon: 'map',
   },
   {
+    id: 'geocheck',
+    label: 'Geospatial Verification',
+    path: '/geocheck',
+    icon: 'map',
+  },
+  {
     id: 'settings',
     label: t('navigation.settings'),
     path: '/settings',
