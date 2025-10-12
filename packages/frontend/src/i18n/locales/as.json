@@ -1,0 +1,139 @@
+{
+  "common": {
+    "loading": "লোড হৈ আছে...",
+    "error": "ত্ৰুটি",
+    "success": "সফলতা",
+    "cancel": "বাতিল কৰক",
+    "save": "সংৰক্ষণ কৰক",
+    "delete": "মচি পেলাওক",
+    "edit": "সম্পাদনা কৰক",
+    "view": "চাওক",
+    "download": "ডাউনলোড",
+    "upload": "আপলোড",
+    "search": "সন্ধান কৰক",
+    "filter": "ফিল্টাৰ",
+    "clear": "পৰিষ্কাৰ কৰক",
+    "submit": "দাখিল কৰক",
+    "close": "বন্ধ কৰক",
+    "yes": "হয়",
+    "no": "নহয়",
+    "ok": "ঠিক আছে"
+  },
+  "navigation": {
+    "dashboard": "ডেছবৰ্ড",
+    "uploadDocuments": "নথি আপলোড কৰক",
+    "analysisResults": "বিশ্লেষণৰ ফলাফল",
+    "reports": "প্ৰতিবেদন",
+    "geospatialView": "ভৌগোলিক দৃশ্য",
+    "settings": "ছেটিংছ",
+    "profile": "প্ৰ'ফাইল",
+    "logout": "লগ আউট"
+  },
+  "header": {
+    "title": "AI-চালিত DPR গুণগত মূল্যায়ন ব্যৱস্থা",
+    "appName": "DPR ছিষ্টেম"
+  },
+  "dashboard": {
+    "title": "ডেছবৰ্ড",
+    "welcome": "DPR গুণগত মূল্যায়ন ব্যৱস্থালৈ আপোনাক স্বাগতম",
+    "totalDocuments": "মুঠ নথি",
+    "completedAnalysis": "সম্পূৰ্ণ বিশ্লেষণ",
+    "averageScore": "গড় স্ক'ৰ",
+    "pendingReviews": "বাকী পৰ্যালোচনা",
+    "recentActivity": "শেহতীয়া কাৰ্যকলাপ",
+    "quickActions": "দ্ৰুত কাৰ্য",
+    "uploadNew": "নতুন নথি আপলোড কৰক",
+    "viewReports": "প্ৰতিবেদন চাওক",
+    "systemStatus": "ছিষ্টেমৰ অৱস্থা"
+  },
+  "upload": {
+    "title": "নথি আপলোড কৰক",
+    "dragDrop": "ফাইলসমূহ ইয়াত টানি আনি এৰি দিয়ক, বা নিৰ্বাচন কৰিবলৈ ক্লিক কৰক",
+    "supportedFormats": "সমৰ্থিত ফৰ্মেট: PDF, DOCX, TXT",
+    "maxSize": "সৰ্বোচ্চ ফাইল আকাৰ",
+    "batchUpload": "বেচ আপলোড (১০টা ফাইললৈকে)",
+    "uploadProgress": "আপলোড অগ্ৰগতি",
+    "processingStatus": "প্ৰক্ৰিয়াকৰণৰ অৱস্থা",
+    "uploaded": "আপলোড কৰা হৈছে",
+    "processing": "প্ৰক্ৰিয়াকৰণ",
+    "completed": "সম্পূৰ্ণ",
+    "failed": "বিফল"
+  },
+  "analysis": {
+    "title": "বিশ্লেষণৰ ফলাফল",
+    "completenessScore": "সম্পূৰ্ণতাৰ স্ক'ৰ",
+    "feasibilityRating": "সম্ভাৱনাৰ ৰেটিং",
+    "riskLevel": "বিপদৰ স্তৰ",
+    "priceComparison": "মূল্য তুলনা",
+    "schemeMatches": "আঁচনি মিল",
+    "gapAnalysis": "ব্যৱধান বিশ্লেষণ",
+    "recommendations": "পৰামৰ্শসমূহ",
+    "viewDetails": "বিৱৰণ চাওক",
+    "exportReport": "প্ৰতিবেদন ৰপ্তানি কৰক"
+  },
+  "reports": {
+    "title": "প্ৰতিবেদন",
+    "generateReport": "প্ৰতিবেদন সৃষ্টি কৰক",
+    "reportType": "প্ৰতিবেদনৰ প্ৰকাৰ",
+    "dateRange": "তাৰিখৰ পৰিসৰ",
+    "comprehensive": "ব্যাপক বিশ্লেষণ",
+    "summary": "সাৰাংশ প্ৰতিবেদন",
+    "comparison": "তুলনা প্ৰতিবেদন",
+    "exportPDF": "PDF হিচাপে ৰপ্তানি কৰক",
+    "exportExcel": "Excel হিচাপে ৰপ্তানি কৰক"
+  },
+  "geospatial": {
+    "title": "ভৌগোলিক দৃশ্য",
+    "mapView": "মানচিত্ৰ দৃশ্য",
+    "projectLocations": "প্ৰকল্পৰ স্থানসমূহ",
+    "verificationStatus": "সত্যাপনৰ অৱস্থা",
+    "accessibility": "প্ৰৱেশযোগ্যতা",
+    "constraints": "বাধাসমূহ",
+    "verified": "সত্যাপিত",
+    "pending": "বাকী",
+    "failed": "বিফল"
+  },
+  "settings": {
+    "title": "ছেটিংছ",
+    "language": "ভাষা",
+    "selectLanguage": "ভাষা নিৰ্বাচন কৰক",
+    "english": "English (ইংৰাজী)",
+    "hindi": "हिंदी (হিন্দী)",
+    "assamese": "অসমীয়া",
+    "preferences": "পছন্দসমূহ",
+    "notifications": "জাননীসমূহ",
+    "account": "একাউণ্ট ছেটিংছ",
+    "system": "ছিষ্টেম ছেটিংছ"
+  },
+  "auth": {
+    "login": "লগইন",
+    "username": "ব্যৱহাৰকাৰীৰ নাম",
+    "password": "পাছৱৰ্ড",
+    "forgotPassword": "পাছৱৰ্ড পাহৰিছে?",
+    "loginError": "অবৈধ ব্যৱহাৰকাৰীৰ নাম বা পাছৱৰ্ড",
+    "loginSuccess": "লগইন সফল"
+  },
+  "errors": {
+    "fileTooBig": "ফাইলৰ আকাৰ সৰ্বোচ্চ সীমাতকৈ বেছি",
+    "invalidFormat": "অবৈধ ফাইল ফৰ্মেট",
+    "uploadFailed": "আপলোড বিফল",
+    "processingFailed": "প্ৰক্ৰিয়াকৰণ বিফল",
+    "networkError": "নেটৱৰ্ক ত্ৰুটি হৈছে",
+    "serverError": "চাৰ্ভাৰ ত্ৰুটি হৈছে",
+    "unauthorized": "অনুমতিহীন প্ৰৱেশ",
+    "notFound": "সম্পদ পোৱা নগ'ল"
+  },
+  "validation": {
+    "required": "এই ক্ষেত্ৰটো আৱশ্যক",
+    "invalidEmail": "অবৈধ ইমেইল ঠিকনা",
+    "minLength": "নূন্যতম দৈৰ্ঘ্য {{count}} আখৰ",
+    "maxLength": "সৰ্বোচ্চ দৈৰ্ঘ্য {{count}} আখৰ"
+  },
+  "dateTime": {
+    "today": "আজি",
+    "yesterday": "কালি",
+    "lastWeek": "যোৱা সপ্তাহ",
+    "lastMonth": "যোৱা মাহ",
+    "custom": "কাষ্টম পৰিসৰ"
+  }
+}

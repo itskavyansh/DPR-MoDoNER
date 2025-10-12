@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganges River",
+        "description": "Major river flowing through northern India"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [88.1, 24.5],
+          [87.0, 25.2],
+          [84.8, 25.5],
+          [82.5, 25.3],
+          [80.0, 26.2],
+          [78.2, 28.5]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Delhi-Mumbai Highway",
+        "description": "Major highway connecting Delhi and Mumbai"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.2, 28.6],
+          [77.0, 27.2],
+          [76.8, 25.9],
+          [75.8, 24.6],
+          [74.6, 23.0],
+          [73.8, 20.0],
+          [72.8, 19.1]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yamuna River",
+        "description": "Major tributary of the Ganges"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [77.5, 30.4],
+          [77.3, 29.9],
+          [77.2, 28.6],
+          [78.1, 27.5],
+          [78.6, 26.8],
+          [79.8, 25.4]
+        ]
+      }
+    }
+  ]
+}

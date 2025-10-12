@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaziranga National Park",
+        "description": "UNESCO World Heritage Site known for one-horned rhinoceros",
+        "type": "National Park",
+        "area": 430
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[93.2, 26.5], [93.4, 26.5], [93.4, 26.7], [93.2, 26.7], [93.2, 26.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manas National Park",
+        "description": "UNESCO World Heritage Site with rich biodiversity",
+        "type": "National Park",
+        "area": 500
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[91.0, 26.6], [91.4, 26.6], [91.4, 26.8], [91.0, 26.8], [91.0, 26.6]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Namdapha National Park",
+        "description": "Largest protected area in Eastern Himalaya",
+        "type": "National Park",
+        "area": 1985
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[96.3, 27.3], [96.7, 27.3], [96.7, 27.7], [96.3, 27.7], [96.3, 27.3]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dibru-Saikhowa National Park",
+        "description": "Biosphere reserve in Assam",
+        "type": "National Park",
+        "area": 340
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[95.3, 27.6], [95.6, 27.6], [95.6, 27.8], [95.3, 27.8], [95.3, 27.6]]]
+      }
+    }
+  ]
+}

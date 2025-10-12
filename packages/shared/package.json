@@ -1,0 +1,25 @@
+{
+  "name": "@dpr-system/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities, types, and constants for DPR Quality Assessment System",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest --run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0",
+    "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "zod": "^3.21.0",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "vitest": "^0.34.0"
+  }
+}
