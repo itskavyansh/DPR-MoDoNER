@@ -7,6 +7,7 @@ import { registerRiskMitigationRoutes } from './routes/riskMitigation.js';
 import { registerRiskClassificationRoutes } from './routes/riskClassification.js';
 import { geospatialVerificationRoutes } from './routes/geospatialVerification.js';
 import { dprSummarizationRoutes } from './routes/dprSummarization.js';
+import reportGenerationRoutes from './routes/reportGeneration.js';
 
 // Export all services for external use
 export * from './services/index.js';
@@ -29,6 +30,7 @@ fastify.register(registerRiskMitigationRoutes);
 fastify.register(registerRiskClassificationRoutes);
 fastify.register(geospatialVerificationRoutes, { prefix: '/api/geospatial' });
 fastify.register(dprSummarizationRoutes, { prefix: '/api/dpr' });
+fastify.register(reportGenerationRoutes, { prefix: '/api/ai' });
 
 // Health check endpoint
 fastify.get('/health', async (request, reply) => {

@@ -51,27 +51,17 @@ const getNavigationItems = (t: any): NavigationItem[] => [
     path: '/upload',
     icon: 'upload',
   },
-  {
-    id: 'analysis',
-    label: t('navigation.analysisResults'),
-    path: '/analysis',
-    icon: 'analytics',
-  },
+
   {
     id: 'reports',
     label: t('navigation.reports'),
     path: '/reports',
     icon: 'assessment',
   },
-  {
-    id: 'geospatial',
-    label: t('navigation.geospatialView'),
-    path: '/geospatial',
-    icon: 'map',
-  },
+
   {
     id: 'geocheck',
-    label: 'Geospatial Verification',
+    label: t('navigation.geospatialVerification'),
     path: '/geocheck',
     icon: 'map',
   },
@@ -109,7 +99,7 @@ const DashboardLayout: React.FC<DashboardLayoutProps> = ({ children }) => {
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
-  
+
   const navigationItems = getNavigationItems(t);
 
   const handleDrawerToggle = () => {

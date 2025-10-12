@@ -27,16 +27,16 @@ i18n
     fallbackLng: 'en',
     lng: 'en', // Set default language explicitly
     debug: process.env.NODE_ENV === 'development',
-    
+
     interpolation: {
       escapeValue: false, // React already escapes values
     },
-    
+
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
     },
-    
+
     // Language-specific formatting options
     react: {
       useSuspense: false,
